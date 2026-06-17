@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SRP Energy (Hourly)",
+        "description": "Enter your SRP account credentials. Use the account ID and the username/password you use to sign in at srpnet.com.",
+        "data": {
+          "account_id": "Account ID",
+          "username": "Username",
+          "password": "Password",
+          "is_tou": "Time-of-Use (TOU/EZ-3) plan"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid authentication",
+      "cannot_connect": "Failed to connect",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "yesterday_energy": {
+        "name": "Yesterday energy"
+      },
+      "yesterday_cost": {
+        "name": "Yesterday cost"
+      },
+      "latest_hour_energy": {
+        "name": "Latest hour energy"
+      },
+      "latest_hour_cost": {
+        "name": "Latest hour cost"
+      }
+    }
+  }
+}
