@@ -1,0 +1,37 @@
+{
+  "entity": {
+    "sensor": {
+      "latest_hour_usage": { "name": "Latest hour usage" },
+      "latest_hour_cost": { "name": "Latest hour cost" },
+      "latest_day_usage": { "name": "Latest day usage" },
+      "latest_day_cost": { "name": "Latest day cost" }
+    }
+  },
+  "config": {
+    "step": {
+      "user": {
+        "title": "SRP Energy",
+        "description": "Enter your SRP account details. Hourly usage and cost will be imported into Home Assistant long-term statistics for the Energy Dashboard.",
+        "data": {
+          "id": "Account ID",
+          "name": "Name",
+          "username": "Username",
+          "password": "Password",
+          "is_tou": "Time-of-use plan"
+        },
+        "data_description": {
+          "id": "Your SRP account number (digits only).",
+          "is_tou": "Enable if you are on an SRP time-of-use rate plan."
+        }
+      }
+    },
+    "error": {
+      "invalid_account": "The account ID is not valid.",
+      "invalid_auth": "Invalid authentication. Check your username and password.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This SRP account is already configured."
+    }
+  }
+}
